@@ -8,4 +8,4 @@ selectionDisabled: 0
 viewpointLocked: 0
 orthographicViewHeight: 1
 textFiles: 0 "controllers/u3_exam_gonzalez_julio/u3_exam_gonzalez_julio.c"
-globalOptionalRendering: CoordinateSystem
+globalOptionalRendering: CoordinateSystem::DistanceSensorRays::JointAxes

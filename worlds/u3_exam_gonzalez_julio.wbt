@@ -2,8 +2,8 @@
 WorldInfo {
 }
 Viewpoint {
-  orientation -0.10885229317000812 -0.9597413110538452 -0.2589358880655154 2.3746230421396857
-  position -0.5035639471091369 0.35659704604850917 -0.533882830114823
+  orientation 0.9997991791876473 -0.014580497272617954 -0.01374810514179667 4.7709384847322065
+  position 0.029909581713830003 0.4948364190368903 0.004949987713126103
 }
 TexturedBackground {
 }
@@ -781,6 +781,31 @@ Robot {
       boundingObject USE body
       physics Physics {
       }
+    }
+    DistanceSensor {
+      translation 0.05 0 -0.076
+      rotation 0 1 0 1.48353
+      children [
+        DEF sen Shape {
+          appearance PBRAppearance {
+            baseColor 0.5411764705882353 0.8862745098039215 0.20392156862745098
+          }
+          geometry Box {
+            size 0.01 0.01 0.01
+          }
+        }
+      ]
+      name "sensor_1"
+      boundingObject USE sen
+    }
+    DistanceSensor {
+      translation -0.05 0 -0.076
+      rotation 0 1 0 1.65806
+      children [
+        USE sen
+      ]
+      name "distance sensor(1)"
+      boundingObject USE sen
     }
   ]
   boundingObject USE body
