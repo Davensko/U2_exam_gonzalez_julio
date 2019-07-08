@@ -79,9 +79,9 @@ int main(int argc, char **argv)
          wb_motor_set_position(wheel1, INFINITY);
          wb_motor_set_velocity(wheel1, 0);
          wb_motor_set_position(wheel2, INFINITY);
-         wb_motor_set_velocity(wheel2, vel);
+         wb_motor_set_velocity(wheel2, -vel);
          wb_motor_set_position(wheel3, INFINITY);
-         wb_motor_set_velocity(wheel3, -vel);
+         wb_motor_set_velocity(wheel3, vel);
      }
      
      if (stop != key){
@@ -101,9 +101,9 @@ int main(int argc, char **argv)
          wb_motor_set_position(wheel1, INFINITY);
          wb_motor_set_velocity(wheel1, 0);
          wb_motor_set_position(wheel2, INFINITY);
-         wb_motor_set_velocity(wheel2, -vel);
+         wb_motor_set_velocity(wheel2, vel);
          wb_motor_set_position(wheel3, INFINITY);
-         wb_motor_set_velocity(wheel3, vel);
+         wb_motor_set_velocity(wheel3, -vel);
      }
      /*
      if (key==WB_KEYBOARD_LEFT){
@@ -159,7 +159,7 @@ int main(int argc, char **argv)
          vel= 2.0; 
      
          wb_motor_set_position(wheel1, INFINITY);
-         wb_motor_set_velocity(wheel1, vel);
+         wb_motor_set_velocity(wheel1, -vel);
          wb_motor_set_position(wheel2, INFINITY);
          wb_motor_set_velocity(wheel2, -vel);
          wb_motor_set_position(wheel3, INFINITY);
@@ -171,7 +171,7 @@ int main(int argc, char **argv)
          vel= 2.0; 
      
          wb_motor_set_position(wheel1, INFINITY);
-         wb_motor_set_velocity(wheel1, -vel);
+         wb_motor_set_velocity(wheel1, vel);
          wb_motor_set_position(wheel2, INFINITY);
          wb_motor_set_velocity(wheel2, vel);
          wb_motor_set_position(wheel3, INFINITY);
