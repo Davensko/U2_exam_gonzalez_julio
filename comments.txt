@@ -1,0 +1,75 @@
+For the exam I use files exported from solidworks. 
+Note: check the folder Auxiliars. 
+
+Procedure:
+                              Calculations of the pololu motor
+ 
+To calculate  the max velocity I take from the datasheet the value of 290 RPM that belong of the 12 volts motor with high-power, 
+and I convert it on rad/s, as shown below: 
+
+    290 RPM to rad/s
+
+    2pi
+   ----- (290 RPM) = 30.36872898 rad/s
+    60
+
+To calculate  the max Torque I take from the datasheet the value of 120 oz-in that belong of the 12 volts motor with high-power, 
+and I convert it on Nm, as shown below:
+
+   120 oz-in to Nm
+
+    1 Nm = 141.611928935736 oz-in
+
+    (120 oz-in)(1 Nm)
+   ------------------- =   0.84738624 Nm
+  141.611928935736 oz-in
+
+                                          Encoder 
+
+To calculate  the resolution of the encoder I take from the datasheet the value of 1632.67 counts per revolution that belong of the 12 volts motor with high-power, and I convert it as shown below:
+
+                     2pi
+      Resolution =  -----  = 0.003848411073
+                   1632.67
+
+
+                                        lookuptable
+
+  I take from the datasheet the value of 16 bits, and do the shown belog: 
+
+     0       0    0                 2^(bit)-1 ==>     2^(16)-1 = 65535                
+    0.2    65535  0
+
+
+  The range of operation is from 0 to 200 mm. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
